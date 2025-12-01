@@ -1,13 +1,6 @@
 .contact{
     padding: 100px;
-    background: 
-    linear-gradient(
-      135deg,
-      rgba(41, 46, 51, 0.7),   // ↑ higher alpha = darker overlay
-      rgba(42, 70, 82, 0.8),
-      rgba(49, 64, 66, 1.5)
-    ),
-    url('../../assets/back-bg.jpg') center/cover no-repeat; 
+   
 }
 
 
@@ -16,7 +9,7 @@
         padding: 20px;
 
         &__header-text{
-            color: var(--yellow-theme-sub-text-color);
+            color: rgb(70, 187, 255);
             display: inline-block;
             font-size: 22px;
             font-weight: 600;
@@ -64,7 +57,7 @@
                         transition: all 0.5s ease;
                         position: relative;
                         background-color: transparent;
-                        color: var(--yellow-theme-sub-text-color);
+                        color: #00FFFF;
                     }
 
                     .nameLabel,
@@ -75,7 +68,7 @@
                         top: 7px;
                         left: 12px;
                         transition: all 0.2s ease;
-                        color: var(--yellow-theme-sub-text-color);
+                        color: rgb(70, 187, 255);
                         font-size: 16px;
                     }
 

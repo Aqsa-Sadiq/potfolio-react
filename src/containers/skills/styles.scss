@@ -1,13 +1,6 @@
 .skills{
   padding: 100px;
-  background: 
-    linear-gradient(
-      135deg,
-      rgba(41, 46, 51, 0.7),   // ↑ higher alpha = darker overlay
-      rgba(42, 70, 82, 0.8),
-      rgba(49, 64, 66, 1.5)
-    ),
-    url('../../assets/back-bg.jpg') center/cover no-repeat; 
+  
 }
 
 .skills{
@@ -22,11 +15,6 @@ gap: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    
-    
-
-
 
     &__category-text{
       display: inline-block;

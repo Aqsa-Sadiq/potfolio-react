@@ -43,7 +43,7 @@ setToggleIcon(!toggleIcon);
     }
     return(
         <div>
-            <nav className ="navbar">
+            <nav className ="navbar !bg-pink-200">
                 <div className= "navbar__container">
 <Link to={'/'} className="navbar__container__logo"> 
 <FaDesktop size ={30} />

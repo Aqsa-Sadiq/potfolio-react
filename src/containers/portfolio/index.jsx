@@ -1,12 +1,12 @@
 import React from "react";
 import PageHeaderContent from "../../components/pageHeaderContent";
 import { BsInfoCircleFill } from "react-icons/bs";
-import ImageOne from "../../images/image1.jpg";
-import ImageTwo from "../../images/image2.jpg";
-import ImageThree from "../../images/image3.jpg";
-import ImageFour from "../../images/image4.jpg";
-import ImageFive from "../../images/image5.jpg";
-import ImageSix from "../../images/image6.jpg";
+import ImageOne from "../../images/notes.png";
+import ImageTwo from "../../images/jewellery.avif";
+import ImageThree from "../../images/calculator.jpg";
+import ImageFour from "../../images/chatbot.png";
+import ImageFive from "../../images/food.jpg";
+import ImageSix from "../../images/quiz.png";
 import "./styles.scss";
 import { useState } from "react";
 
