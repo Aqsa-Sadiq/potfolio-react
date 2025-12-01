@@ -9,11 +9,16 @@
     align-items: center;
     min-height: calc(100vh - 80px);
 
-    background:
-        linear-gradient(rgba(0, 0, 0, 0.6),
-            /* black overlay */
-            rgba(0, 0, 0, 0.6)),
-        url('../../assets/back-bg.jpg') center/cover no-repeat;
+   background-image:
+  linear-gradient(
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)
+  ),
+  url("/back-bg.jpg");
+
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
 
 
     &__text-wrapper {
