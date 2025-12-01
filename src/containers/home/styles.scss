@@ -16,16 +16,17 @@
         display: flex;
         flex-direction: column;
 
-        h1 {
-            font-size: 7rem;
-            font-weight: 500;
-            line-height: 10rem;
-            white-space: nowrap;
-            overflow: hidden;
-            width: 0;
-            animation: typingEffectAnimation 3.5s steps(30, end) forwards;
+    }
 
-        }
+    h1 {
+        font-size: 7rem;
+        font-weight: 500;
+        line-height: 10rem;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 0;
+        animation: typingEffectAnimation 3.5s steps(30, end) forwards;
+
     }
 
     &__contact-me {

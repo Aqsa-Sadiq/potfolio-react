@@ -11,10 +11,9 @@ const Home = () => {
 navigate('/contact')
     }
 
-
     return(
         <section id="home" className="home">
-            <div className="home__text-wrapper">
+            <div className="">
                 <h1>
                     Hello, I'm Aqsa
 <br/>
