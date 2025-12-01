@@ -1,0 +1,263 @@
+.contact{
+    padding: 100px;
+    background: 
+    linear-gradient(
+      135deg,
+      rgba(41, 46, 51, 0.7),   // ↑ higher alpha = darker overlay
+      rgba(42, 70, 82, 0.8),
+      rgba(49, 64, 66, 1.5)
+    ),
+    url('../../assets/back-bg.jpg') center/cover no-repeat; 
+}
+
+
+.contact{
+    &__content{
+        padding: 20px;
+
+        &__header-text{
+            color: var(--yellow-theme-sub-text-color);
+            display: inline-block;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 1em;
+            letter-spacing: 0.5px;
+            position: relative;
+            text-transform: uppercase;
+            padding: 5px 10px;
+            border-bottom: 2px solid var(--yellow-theme-main-color);
+        }
+
+        &__header-text::before,
+        &__header-text::after{
+            position: absolute;
+            content: "";
+            width: 2px;
+            height: 5px;
+            background-color: var(--yellow-theme-main-color);
+            bottom: -1px;
+        }
+        &__header-text::before{
+            left: 0;
+        }
+        &__header-text::after{
+            right: 0;
+        }
+
+        &__form{
+            margin-top: 30px;
+
+            &__controlswrapper{
+                  display: grid;
+                  grid-template-columns: repeat(2,1fr);
+                  gap: 40px;
+                  margin-bottom: 30px;
+
+                  div{
+                    position: relative;
+                    .inputName,
+                    .inputEmail,
+                    .inputDescription{
+                        width: 100%;
+                        border: 2px solid var(--yellow-theme-main-color);
+                        padding: 16px 12px;
+                        transition: all 0.5s ease;
+                        position: relative;
+                        background-color: transparent;
+                        color: var(--yellow-theme-sub-text-color);
+                    }
+
+                    .nameLabel,
+                    .emailLabel,
+                    .descriptionLabel{
+                        font-weight: 500;
+                        position: absolute;
+                        top: 7px;
+                        left: 12px;
+                        transition: all 0.2s ease;
+                        color: var(--yellow-theme-sub-text-color);
+                        font-size: 16px;
+                    }
+
+                    .inputName:focus,
+                    .inputEmail:focus,
+                    .inputDescription:focus{
+                        outline: none;
+                    }
+
+                    .inputName:focus + .nameLabel,
+                    .inputName:valid + .nameLabel,
+                    .inputEmail:focus+.emailLabel,
+                    .inputEmail:valid+.emailLabel,
+                    .inputDescription:focus + .descriptionLabel,
+                    .inputDescription:valid + .descriptionLabel
+                    {
+                        font-size: 18px;
+                        top: -25px;
+                        left: 0px;
+                    }
+
+
+                   
+                  }
+            }
+        }
+
+        button{
+            cursor: pointer;
+            padding: 10px 70px;
+            font-size: 2rem;
+            background: transparent;
+            color: var(--yellow-theme-main-color);
+            border: 1.5px solid var(--yellow-theme-main-color);
+            border-radius: 4px;
+            font-weight: 500;
+
+            &:hover{
+                color: #000;
+                background: var(--yellow-theme-main-color);
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 60px 20px;
+
+    &__content {
+      padding: 10px;
+
+      &__form {
+        &__controlswrapper {
+          grid-template-columns: 1fr; 
+          gap: 25px;
+        }
+      }
+
+      button {
+        display: block;
+        margin: 20px auto 0; 
+      }
+    }
+  }
+}
+
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 100px 10px;
+
+    &__content {
+      &__header-text {
+        font-size: 18px;
+        padding: 4px 8px;
+      }
+
+      &__form {
+        &__controlswrapper {
+          gap: 20px;
+
+          div {
+            .inputName,
+            .inputEmail,
+            .inputDescription {
+              padding: 14px 10px;
+              font-size: 14px;
+            }
+
+            .nameLabel,
+            .emailLabel,
+            .descriptionLabel {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+
+      button {
+        font-size: 1.4rem;
+        padding: 10px 30px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 360px) {
+  .contact__content__header-text {
+    font-size: 16px;
+  }
+
+  .contact__content button {
+    width: 100%;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .contact {
+    padding: 100px 8px !important;
+  }
+
+  .contact__content {
+    padding: 5px !important;
+  }
+
+  .contact__content__header-text {
+    font-size: 14px !important;
+    padding: 3px 6px !important;
+  }
+
+ 
+  .contact__content__form__controlswrapper {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+    margin-bottom: 20px !important;
+  }
+
+  
+  .contact__content__form__controlswrapper div .inputName,
+  .contact__content__form__controlswrapper div .inputEmail,
+  .contact__content__form__controlswrapper div .inputDescription {
+    padding: 12px 10px !important;
+    font-size: 13px !important;
+  }
+
+  
+  .contact__content__form__controlswrapper div .nameLabel,
+  .contact__content__form__controlswrapper div .emailLabel,
+  .contact__content__form__controlswrapper div .descriptionLabel {
+    font-size: 13px !important;
+    top: 6px !important;
+    left: 10px !important;
+  }
+
+  
+  .contact__content__form__controlswrapper div 
+  .inputName:focus + .nameLabel,
+  .contact__content__form__controlswrapper div 
+  .inputName:valid + .nameLabel,
+  .contact__content__form__controlswrapper div 
+  .inputEmail:focus + .emailLabel,
+  .contact__content__form__controlswrapper div 
+  .inputEmail:valid + .emailLabel,
+  .contact__content__form__controlswrapper div 
+  .inputDescription:focus + .descriptionLabel,
+  .contact__content__form__controlswrapper div 
+  .inputDescription:valid + .descriptionLabel {
+    font-size: 12px !important;
+    top: -16px !important;
+    left: 2px !important;
+  }
+
+ 
+  .contact__content button {
+    width: 100% !important;
+    font-size: 1.3rem !important;
+    padding: 12px 0 !important;
+    margin-top: 15px !important;
+  }
+}
