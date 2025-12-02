@@ -13,7 +13,7 @@ navigate('/contact')
 
     return(
         <section id="home" className="home">
-            <div className="">
+            <div className="home__text-wrapper">
                 <h1>
                     Hello, I'm Aqsa
 <br/>
