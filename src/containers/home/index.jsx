@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from 'react-router-dom';
 import { Animate } from 'react-simple-animate';
 import './styles.scss';
-import bg from "../../assets/back-bg.jpg";  // ✅ Import image from assets
+import bg from "../../assets/back-bg.jpg";  
 
 const Home = () => {
     const navigate = useNavigate();
@@ -15,15 +15,7 @@ const Home = () => {
         <section 
             id="home" 
             className="home"
-            style={{
-                backgroundImage: `
-                    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-                    url(${bg})
-                `,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat"
-            }}
+            
         >
             <div className="home__text-wrapper">
                 <h1>
