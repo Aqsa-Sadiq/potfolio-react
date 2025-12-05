@@ -1,76 +1,78 @@
 .home {
-    .home {
   width: 100%;
-  min-height: 100vh; 
+  min-height: 100vh;
   background-image: url('../../assets/back-bg.jpg');
-  background-size: cover;      
-  background-position: center;  
-  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
   display: flex;
   flex-direction: column;
-  justify-content: center;   
-  align-items: center;       
+  justify-content: center;
+  align-items: center;
   text-align: center;
-}
 
-   &__text-wrapper {
+  &__text-wrapper {
     display: flex;
     flex-direction: column;
-    width: 100%;         
-    align-items: center;  
-    text-align: center;   
+    width: 100%;
+    align-items: center;
+    text-align: center;
 
     h1 {
-        font-size: 7rem;
-        font-weight: 500;
-        line-height: 10rem;
-        color: var(--yellow-theme-main-color);
-        white-space: nowrap;
-        overflow: hidden;
-        width: 0;
-        animation: typingEffectAnimation 3.5s steps(30, end) forwards;
+      font-size: 7rem;
+      font-weight: 500;
+      line-height: 10rem;
+      color: var(--yellow-theme-main-color);
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typingEffectAnimation 3.5s steps(30, end) forwards;
     }
-}
+  }
 
-    &__contact-me {
-        display: flex;
-        justify-content: center;
-        margin-top: 15px;
+  &__contact-me {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
 
-        button {
-            cursor: pointer;
-            padding: 10px 65px;
-            font-size: 2rem;
-            background: transparent;
-            color: var(--yellow-theme-main-color);
-            border: 1.5px solid var(--yellow-theme-main-color);
-            border-radius: 4px;
-            font-weight: 500;
+    button {
+      cursor: pointer;
+      padding: 10px 65px;
+      font-size: 2rem;
+      background: transparent;
+      color: var(--yellow-theme-main-color);
+      border: 1.5px solid var(--yellow-theme-main-color);
+      border-radius: 4px;
+      font-weight: 500;
 
-            &:hover {
-                background: var(--yellow-theme-main-color);
-                color: rgb(10, 4, 51);
-            }
-        }
+      &:hover {
+        background: var(--yellow-theme-main-color);
+        color: rgb(10, 4, 51);
+      }
     }
+  }
 }
 
 @keyframes typingEffectAnimation {
-    from { width: 0; }
-    to { width: 100%; }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 550px) {
-    .home__text-wrapper h1 {
-        font-size: 3rem;
-        line-height: 6rem;
-        font-weight: 500;
-    }
+  .home__text-wrapper h1 {
+    font-size: 3rem;
+    line-height: 6rem;
+    font-weight: 500;
+  }
 
-    .home__contact-me button {
-        padding: 8px 35px;
-        font-size: 1.4rem;
-        font-weight: 300;
-    }
+  .home__contact-me button {
+    padding: 8px 35px;
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
 }
