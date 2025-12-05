@@ -36,7 +36,7 @@
   &__contact-me {
     display: flex;
     justify-content: center;
-    margin-top: 15px;
+    margin-bottom:200px;
 
     button {
       cursor: pointer;
@@ -63,6 +63,7 @@
 
 @media screen and (max-width: 550px) {
   .home__text-wrapper h1 {
+    padding: 100px 20px;
     font-size: 3rem;
     line-height: 6rem;
   }
